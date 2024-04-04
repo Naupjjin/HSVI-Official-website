@@ -1,0 +1,214 @@
+{% extends "base.html" %}
+{% block css %}
+    <link rel="stylesheet" type="text/css"href="https://unpkg.com/swiper@8/swiper-bundle.min.css" /> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="static/index_style.css">
+    <link rel="stylesheet" href="static/upnav.css">
+    <link rel="stylesheet" href="static/scrollbar_style.css">
+    
+    <style>
+        .custom-primary {
+            background-color: rgb(42, 21, 58) !important;
+        }
+        body{
+            background-color: rgb(42, 21, 58);
+        }
+    </style>
+{% endblock %}
+
+{% block main %}
+<!-- cover -->
+<div>
+    <!-- <img src="static/img/indexbackground.png" style="z-index: -100; height:100vh; width: 99.9vw; position: absolute; object-fit: cover; "> -->
+    <div class="index" id="index" style="padding: 100px 20%; margin-top: 20px;">
+        <div class="index-text">
+            <p id="line1" style="color: #b9b9b9; font-weight: 400; font-size: 1.5rem; font-weight: 500;"></p>
+            
+            <h1 id="line3" style="display: none;"></h1>
+            <h5 id="line4" style="color: #b9b9b9;"></h5>
+           <div class="social">
+                <a class="icon text-decoration-none" href="https://www.facebook.com/profile.php?id=100087180011121"><i class="bx bxl-facebook"></i></a>
+                <a class="icon text-decoration-none" href="https://twitter.com/HSVI45634750"><i class="bx bxl-twitter"></i></a>
+                <a class="icon text-decoration-none" href="https://www.instagram.com/hsvi_111/"><i class='bx bxl-instagram-alt'></i></a>
+                <a class="icon text-decoration-none rounded-pill" href="{{url_for('aboutus')}}" style="height: 2.195rem; width: auto; padding: 0rem 1rem 0rem 1rem; font-weight: 600;">關於我們</a>
+           </div>
+           <a href="{{url_for('aboutus')}}#ourVtuber" class="btn_onmouse btn">我們的Vtuber</a>
+    </div>
+</div>
+
+<script>
+    // Text to display
+    var text1 = "我們是";
+    
+    var text3 = "幽夜工作室";
+    var text4 = "由高中生所組成的工作室，以獨立完成Vtuber團體為目標。";
+  
+    // Display each line one by one
+    var line1 = document.getElementById("line1");
+    
+    var line3 = document.getElementById("line3");
+    var line4 = document.getElementById("line4");
+  
+    function typeText(element, text, delay) {
+      var index = 0;
+      var timer = setInterval(function () {
+        element.innerHTML += text.charAt(index);
+        index++;
+        if (index >= text.length) {
+          clearInterval(timer);
+        }
+      }, delay);
+    }
+  
+    typeText(line1, text1, 150); // Type first line
+    
+    setTimeout(function () {
+      line3.style.display = "block"; // Display third line
+      typeText(line3, text3, 150); // Type third line
+    }, 500);
+    setTimeout(function () {
+      line4.style.color = "#b9b9b9";
+      typeText(line4, text4, 50); // Type fourth line
+    }, 1000);
+  </script>
+  
+<section class="gosomewhere custom-primary">
+    <br><br>
+    <div class="center">
+        <h5>最新公告</h5>
+    </div>
+    <br>
+    <div class="container" id="features">
+        <div class="row">
+        {% for i in range(announcements|length-1,-1,-1) %}
+            <div class="col-md-4 text-decoration-none"> <a class="text-decoration-none" href="https://forms.gle/KNvrwfXpUXVfWfBk8">
+                <div class="card announce" >
+                <img src="static/img/announcement/time_{{i}}.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-text " style="color: black;">{{announcements[i]}}</h5>
+                </div>
+                </div>
+            </a></div>
+        {% endfor %}
+        </div>
+    </div>
+</section>
+<!-- <hr> -->
+  <section class="custom-primary py-5" id="features">
+    <div class="container px-5 my-5">
+        <div class="row gx-5">
+            <div class="col-lg-4 mb-5 mb-lg-0 d-flex align-items-center">
+                <h2 class="fw-bolder mb-0 text-white">HSVI核心價值</h2>
+            </div>
+            
+            <div class="col-lg-8">
+                <div class="row gx-5 row-cols-1 row-cols-md-2">
+                    <div class="col mb-5 h-100">
+                        <div class="feature  text-white rounded-3 mb-3"><i class="bi bi-collection"></i></div>
+                        <h2 class="h5 text-white">H - Happiness（快樂）</h2>
+                        <p class="mb-0 text-white">	幽夜工作室專注於帶給觀眾快樂，透過Vtuber帶給觀眾歡樂是我們的目標。</p>
+                    </div>
+                    <div class="col mb-5 h-100">
+                        <div class="feature  text-white rounded-3 mb-3"><i class="bi bi-building"></i></div>
+                        <h2 class="h5 text-white">S-Student（學生）</h2>
+                        <p class="mb-0 text-white">幽夜工作室是由一群學生組成的團體，並期望只透過學生的力量獨立創造一個令人印象深刻的Vtuber企劃。</p>
+                    </div>
+                    <div class="col mb-5 mb-md-0 h-100">
+                        <div class="feature  text-white rounded-3 mb-3"><i class="bi bi-toggles2"></i></div>
+                        <h2 class="h5 text-white">V-Vibrant（充滿活力）</h2>
+                        <p class="mb-0 text-white">幽夜工作室是個充滿活力的地方，我們盡力提升每位成員的參與感並期望成員們對自己的工作抱有熱情。</p>
+                    </div>
+                    <div class="col h-100">
+                        <div class="feature  text-white rounded-3 mb-3"><i class="bi bi-toggles2"></i></div>
+                        <h2 class="h5 text-white">I - Innovation（創新）</h2>
+                        <p class="mb-0 text-white">幽夜工作室是個充滿新想法的地方，我們創新和不斷探索以因應不斷變動的新媒體生態圈。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- <hr> -->
+<div class="contactus custom-primary">
+    <br>
+    <p>宗旨</p>
+    <h5>我們是一群對VTuber感興趣的高中生，<br>
+        想在高中生活中努力的嘗試新的事物，
+        並在達成目標的道路上取得成長，<br>
+        獨立完成一個很酷的目標，
+        留下很厲害的經歷，<br>
+        並在宣傳VTuber文化的同時讓大家更認識我們。</h5>   
+        
+</div>
+<!-- <hr> -->
+<section class="gosomewhere custom-primary">
+    <br>
+    <div class="center">
+        <h5>更多內容</h5>
+    </div>
+    <div class="otherpage text-center align-items-center container">
+        <div class="row justify-content-center ">
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img class="card-img" style="height:30vh; object-fit: cover;" src="static/img/HSVI_Logo.png" alt="Card image">
+                    <div class="card-body card-img-overlay" style="backdrop-filter: blur(2px);">
+                        <h3 class="card-title text-dark">了解我們團隊運作</h3>
+                        <p class="card-text">進一步了解我們的團隊運作方式</p>
+                        <a href="about_us" class="btn btn-primary">看更多</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img class="card-img" style="height:30vh; object-fit: cover;" src="static/img/recruitment/recruitment_vtb.png" alt="Card image">
+                    <div class="card-body card-img-overlay" style="backdrop-filter: blur(2px);">
+                        <h3 class="card-title text-dark">了解甚麼是 Vtuber</h3>
+                        <p class="card-text">深入了解 Vtuber 是什麼概念</p>
+                        <a href="explainVtuber" class="btn btn-primary">看更多</a>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="col-md-4 mb-4">
+                <div class="card mb-4">
+                    <img class="card-img" style="height:30vh; object-fit: cover;" src="static/img/recruitment/recruitment_artist.png" alt="Card image">
+                    <div class="card-body card-img-overlay" style="backdrop-filter: blur(2px);">
+                        <h3 class="card-title text-dark">加入我們</h3>
+                        <p class="card-text">瞭解如何加入我們的團隊</p>
+                        <a href="work_with_us" class="btn btn-primary">看更多</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <br>
+        <br>
+</section>
+    
+</div>
+{% endblock %}
+
+{% block footer%}
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+<script>
+    const swiper = new Swiper('.swiper-container', {
+    pagination: '.swiper-pagination',
+    effect: 'coverflow',
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: 'auto',
+    coverflow: {
+        rotate: 20,
+        stretch: 0,
+        depth: 200,
+        modifier: 1,
+        slideShadows: true,
+    },
+    loop: true,
+    });
+</script>
+{% endblock %}

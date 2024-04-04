@@ -1,0 +1,31 @@
+.alert_bar {
+    padding: 2.5vh;
+    background-color: #757575;
+    color: white;
+    opacity: 1;
+    transition: opacity 0.6s;
+    margin-bottom: 15px;
+    z-index: 10;
+    position: fixed;
+    left: 0;
+    right: 0;
+  }
+
+.alert_bar.success {background-color: #04AA6D;}
+.alert_bar.info {background-color: #2196F3;}
+.alert_bar.warning {background-color: #ff9800;}
+
+.close_btn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.close_btn:hover {
+  color: black;
+}

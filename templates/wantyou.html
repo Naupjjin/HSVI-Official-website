@@ -1,0 +1,205 @@
+{% extends "base.html" %}
+{% block css %}
+    <link rel="stylesheet" type="text/css"href="https://unpkg.com/swiper@8/swiper-bundle.min.css" /> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="static/upnav.css">
+    <link rel="stylesheet" href="static/scrollbar_style.css">
+    <link rel="stylesheet" href="static/wantyou_style.css">  
+{% endblock %}
+    
+{% block main %}
+     <!--  -->
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <div class="container" style="transition:0.5s;">
+        <div class="row row-cols-1  g-4"  style="transition: all .9s ease;">
+            <!--  -->
+            <!-- <div class="col" style="transition: 0.5s;">
+                <div class="card rounded recruitment_box" onclick="rounded_paperwork_onclick()">
+                    <img class="rounded recruitment_img" src="static/img/cover_index.png"   alt="" srcset="">
+                    <div class="card-img-overlay d-flex align-items-center" style="backdrop-filter: blur(5px);">
+                        <h5 class="card-title recruitment_title h4" style="color: white;">&nbsp &nbsp文書</h5>
+                    </div>
+                </div>
+                <div id="rounded_paperwork_underbox" class="recruitment_underbox container border border-top-0 border-2 p-3 m-0" >
+                    <div class="row align-items-center ">
+                        <div class="col-1 col-lg-1"></div>
+                        <div class="col-12 col-lg-4"><img src="static/img/cuteina.jpg" class="rounded_paperwork_underimg mx-lg-auto img-fluid" alt="" srcset=""></div>
+                        <div class="col-12 col-lg-6 align-items-center align-self-center">
+                            <h5 class="h4">文書</h5>
+                            <p>更為這位證件政策一遍明天至於註冊時間，以為對象以為晶片來看對不起認定二十重視來電，明顯年代體系請教直到，
+                                行情執行即可問道情況往往法院有機會已經個人除了我又遠遠增強，化學教材上網，把它一部分隨時人數我的物流觀眾高級足球小說衝擊未經，辦法妻子深深軟體，
+                                人們報。</p>
+                            <br>
+                            <p class="text-center "><a class="btn border border-1" href="">加入我們</a></p>
+                        </div>
+                        <div class="col-1 col-lg-1"></div>
+                    </div>
+                   
+                    
+                </div>
+            </div> -->
+            
+            <!--  -->
+     
+            <div class="col" >
+                <div class="card rounded recruitment_box "onclick="rounded_mix_onclick()" >
+                    <img class="rounded recruitment_img" src="static/img/recruitment/recruitmentBG_mix.jpg" style="object-position: 50% 35%;"  alt="" srcset="">
+                    <div class="card-img-overlay d-flex align-items-center" style="backdrop-filter: blur(5px);">
+                        <h5 class="card-title recruitment_title h4" style="color: white;">&nbsp &nbsp混音</h5>
+                    </div>
+                </div>
+                <div id="rounded_mix_underbox" class="recruitment_underbox container border border-top-0 border-2 p-3 m-0">
+                    <div class="row align-items-center ">
+                        <div class="col-1 col-lg-1"></div>
+                        <div class="col-12 col-lg-4"><img src="static/img/recruitment/recruitment_mix.png" class="rounded_paperwork_underimg mx-lg-auto img-fluid" alt="" srcset=""></div>
+                        <div style="z-index: 0;" class="col-12 col-lg-6 align-items-center align-self-center"  >
+                            <h5 class="h4">混音</h5>
+                            <br>
+                            <p>混音組是專門負責製作各項音樂相關樂理的組織，須具備以下技能:
+                                <br>
+                                ▪音樂感：混音師需要具有音樂感，能夠了解如何使不同的聲音檔案協調一致，創造所需的音樂效果。
+                                <br>
+                                ▪技術技巧：混音師需要精通聲音編輯軟體，了解如何使用各種工具和效果來調整聲音。</p>
+                            <p class="text-center"><a  class="btn btn-primary btn-dark border border-1" href="https://forms.gle/8p69uBugVzxTReCB6">加入我們</a></p>
+                        </div>
+                        <div class="col-1 col-lg-1"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col" >
+                <div class="card rounded recruitment_box "onclick="rounded_vtb_onclick()" >
+                    <img class="rounded recruitment_img" src="static/img/recruitment/recruitmentBG_all.png"   alt="" srcset="">
+                    <div class="card-img-overlay d-flex align-items-center" style="backdrop-filter: blur(5px);">
+                        <h5 class="card-title recruitment_title h4" style="color: white;">&nbsp &nbsp中之人(已滿)</h5>
+                    </div>
+                </div>
+                <div id="rounded_vtb_underbox" class="recruitment_underbox container border border-top-0 border-2 m-0">
+                    <div class="row align-items-center ">
+                        <div class="col-1 col-lg-1"></div>
+                        <div class="col-12 col-lg-4"><img src="static/img/recruitment/recruitment_vtb.png" class="rounded_paperwork_underimg mx-lg-auto img-fluid" alt="" srcset=""></div>
+                        <div class="col-12 col-lg-6 align-items-center align-self-center"  >
+                            <br>
+                            <h5 class="h4">中之人</h5>
+                            <br>
+                            <p>中之人需要具有歌唱基礎、口條和雜談能力佳、能夠營造良好直播氣氛，能隨機應變、大量空餘時間(週六日有3小時以上空餘時間、平日有一天以上固定3小時以上空閒時間)、以及擁有個人特色等能力。其工作內容包括：
+                                <br>
+                                ▪準備直播或影片的內容：包括設計流程、選擇主題、準備遊戲、解謎、談話、唱歌等。
+                                <br>
+                                ▪經營社交媒體帳號：，經營Twitter、Instagram 等社交媒體平台，增加觀眾的參與性與互動性。
+                                <br>
+                                ▪有歌唱基礎、口條和雜談能力佳、能夠營造良好直播氣氛，能隨機應變、大量空餘時間(週六日有3小時以上空餘時間、平日有一天以上固定3小時以上空閒時間)、個人特色尤佳</p>
+                            <p  class="text-center"><a  class="btn btn-primary btn-dark border border-1" href="https://docs.google.com/forms/d/e/1FAIpQLScImtGoPJlfPCv56tWlAu5fs5FhPNsqrT8n1DM5U0uKY7Xh0A/viewform?usp=sf_link">加入我們</a></p>
+                        </div>
+                        <div class="col-1 col-lg-1"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col" >
+                <div class="card rounded recruitment_box "onclick="rounded_artist_onclick()" >
+                    <img class="rounded recruitment_img" src="static/img/recruitment/naup_worktable.png" style="object-position: 50% 25%;"  alt="" srcset="">
+                    <div class="card-img-overlay d-flex align-items-center" style="backdrop-filter: blur(5px);">
+                        <h5 class="card-title recruitment_title h4" style="color: white;">&nbsp &nbsp繪師(已滿)</h5>
+                    </div>
+                </div>
+                <div id="rounded_artist_underbox" class="recruitment_underbox container border border-top-0 border-2 p-3 m-0">
+                    <div class="row align-items-center ">
+                        <div class="col-1 col-lg-1"></div>
+                        <div class="col-12 col-lg-4"><img src="static/img/recruitment/recruitment_artist.png" class="rounded_paperwork_underimg mx-lg-auto img-fluid" alt="" srcset=""></div>
+                        <div class="col-12 col-lg-6 align-items-center align-self-center"  >
+                            <h5 class="h4">繪師</h5>
+                            <br>
+                            <p>繪師組是指專門負責繪畫和設計的人員，工作內容包括： 
+                                <br>
+                                ▪設計宣傳圖：繪師組可能負責設計海報、廣告和宣傳品，以吸引潛在客戶。
+                                <br>
+                                ▪設計網站界面：繪師組可能負責設計網站界面，包括網站的樣式、圖像和布局。
+                                <br>
+                                ▪建立品牌形象：繪師組可能負責建立公司的品牌形象，包括公司標誌、字體和顏色等。
+                                <br>
+                                ▪繪製商業用途 : 繪製各種週邊用圖，設計Cover曲的背景。</p>
+                            <p  class="text-center"><a  class="btn btn-primary btn-dark border border-1" href="https://forms.gle/y2ocnpu7R8FNS9p28">加入我們</a></p>
+                        </div>
+                        <div class="col-1 col-lg-1"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!--  -->
+     
+            <div class="col" >
+                <div class="card rounded recruitment_box "onclick="rounded_pv_onclick()" >
+                    <img class="rounded recruitment_img" src="static/img/recruitment/recruitmentBG_all.png"   alt="" srcset="">
+                    <div class="card-img-overlay d-flex align-items-center" style="backdrop-filter: blur(5px);">
+                        <h5 class="card-title recruitment_title h4" style="color: white;">&nbsp &nbspPV(已滿)</h5>
+                    </div>
+                </div>
+                <div id="rounded_pv_underbox" class="recruitment_underbox container border border-top-0 border-2 p-3 m-0">
+                    <div class="row align-items-center ">
+                        <div class="col-1 col-lg-1"></div>
+                        <div class="col-12 col-lg-4"><img src="static/img/recruitment/recruitment_pv.png" class="rounded_paperwork_underimg mx-lg-auto img-fluid" alt="" srcset=""></div>
+                        <div class="col-12 col-lg-6 align-items-center align-self-center"  >
+                            <h5 class="h4">pv</h5>
+                            <p>▪PV組是指製作宣傳影片、轉場動畫、 Cover及原創曲、片頭片尾、與其他和動畫製作有關的事務的小組，PV組的工作內容包括：
+                                <br>
+                                ▪製作音樂影片：PV組負責製作音樂影片，通常會與混音組一起進行音樂單曲、專輯、cover曲的製作。
+                                <br>
+                                ▪設計視覺效果：PV組需要設計視覺效果，包括特效、動畫等，以創造出成果。</p>
+                            <br>
+                            <p  class="text-center"><a  class="btn btn-primary btn-dark border border-1" href="https://docs.google.com/forms/d/1lI7RnnLfB9xm-lp16pGN_qhFyjuXfOJ5LcnRnWbjOZQ/edit?usp=drive_web">加入我們</a></p>
+                        </div>
+                        <div class="col-1 col-lg-1"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col" >
+                <div class="card rounded recruitment_box "onclick="rounded_marketing_onclick()" >
+                    <img class="rounded recruitment_img" src="static/img/marketing.jpg"   alt="" srcset="">
+                    <div class="card-img-overlay d-flex align-items-center" style="backdrop-filter: blur(5px);">
+                        <h5 class="card-title recruitment_title h4" style="color: white;">&nbsp &nbsp行銷(已滿)</h5>
+                    </div>
+                </div>
+                <div id="rounded_marketing_underbox" class="recruitment_underbox container border border-top-0 border-2 p-3 m-0">
+                    <div class="row align-items-center ">
+                        <div class="col-1 col-lg-1"></div>
+                        <div class="col-12 col-lg-4"><img src="static/img/recruitment/recruitment_marketing.jpg" class="rounded_paperwork_underimg mx-lg-auto img-fluid" alt="" srcset=""></div>
+                        <div class="col-12 col-lg-6 align-items-center align-self-center"  >
+                            <h5 class="h4">行銷</h5>
+                            <br>
+                            <p>行銷組是指熟悉V圈文化負責制定行銷計畫、增加團隊觸及、訂定VT發展方向等...的人員。行銷組的工作內容包括：
+                                <br>
+                                ▪制定行銷策略：行銷組需要制定行銷策略，以確保公司的產品或服務能夠有效地吸引潛在客戶。
+                                <br>
+                                ▪建立品牌形象：行銷組需要建立公司的品牌形象，包括公司標誌、字體和顏色等。
+                                <br>
+                                ▪設計廣告和宣傳活動：行銷組需要設計廣告和宣傳活動，以吸引潛在客戶。
+                                <br>
+                                ▪分析市場趨勢：行銷組需要分析市場趨勢，以了解客戶需求和競爭對手的情況。
+                                <br>
+                                ▪管理網路營銷：行銷組需要負責管理網路營銷活動，增加團隊的曝光度。</p>
+                            <p  class="text-center"><a  class="btn btn-primary btn-dark border border-1" href="https://docs.google.com/forms/d/16LfxAGdcw2XVGj1JyAdFLcigI78zHp0PQylJmyXw9Jg/edit?usp=drive_web">加入我們</a></p>
+                        </div>
+                        <div class="col-1 col-lg-1"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+     </div>
+     <br>
+{% endblock %}
+
+{% block footer %}
+    <footer >
+        <script src="static/wantyou_script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    </footer>
+{% endblock %}

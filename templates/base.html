@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="static/img/HSVI_Logo.png">
+    <title>幽夜</title>
+    <style>
+        .row_indexnav{
+            padding: 40px 40px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all .35s;
+            text-align: center;
+          }
+    </style>
+
+    {% block css %}{% endblock %}
+    <link rel="stylesheet" type="text/css" href="static/alertbar.css">   
+</head>
+<body style="overflow-x: hidden;">
+
+    <nav>
+        <div class="navbox">
+            <input id="nav-toggle" type="checkbox">
+            <a href="/" class="text-decoration-none"><img class="logo" src="static/img/HSVI_logo_wt.png"></a>
+            <ul class="links">
+               <li class="dropdown"><a class="dropdown-toggle" href="about_us"  role="button"  type="button" data-bs-toggle="dropdown" aria-expanded="false">關於我們</a>
+               <ul class="dropdown-menu"  style="background-color: black;">
+                    <li><a class="dropdown-item text-white" href="about_us#ourVtuber">Vtuber</a></li>
+                    <li><a class="dropdown-item text-white" href="about_us#draw">繪師組</a></li>
+                    <li><a class="dropdown-item text-white" href="about_us#pv">PV</a></li>
+                    <li><a class="dropdown-item text-white" href="about_us#mix">混音</a></li>
+                    <li><a class="dropdown-item text-white" href="about_us#clerical">行政組</a></li>
+                    <li><a class="dropdown-item text-white" href="about_us#social">行銷組</a></li>
+                    <li><a class="dropdown-item text-white" href="about_us#live2d">建模組</a></li>
+                </ul></li> 
+    
+               <li><a href="explainVtuber">什麼是Vtuber</a></li>
+               <li><a href="work_with_us">徵人啟事</a></li>
+            </ul>
+            <label for="nav-toggle" class="icon-burger">
+               <div class="line"></div>
+               <div class="line"></div>
+               <div class="line"></div>
+            </label>
+        </div>
+        {% if alert_now %}
+        <div class="alert_bar" style="background-color:{{alert_now['color']}}" >
+            <span class="close_btn" style="text-shadow: none;">&times;</span>  
+            {{alert_now["message"]}}
+        </div>
+        {% endif %}
+     </nav>
+
+    {% block main %}{% endblock %}
+
+      <!-- 底部導航欄 加了的話rwd會出事可能你要解決一下 -->
+      <footer class="container-fluid py-2 "
+      style="background-color: black !important; box-sizing: content-box; width: auto; max-width: 100%; height: auto; margin-bottom: -10px;">
+      <div class="row row_indexnav" style="background-color: black !important;"> 
+          <div class="col-4 col-md">
+              <ul class="list-unstyled">
+                  <p class="h4 fw-bolder" style="color:#fff ;">頁面</p>
+                  <li><a class="h5 link-secondary fw-semibold text-decoration-none" style="color:#fff ;"
+                          href="/">首頁</a></li>
+                  <li><a class="h5 link-secondary fw-semibold text-decoration-none" style="color:#fff ;"
+                          href="about_us">關於HSVI</a></li>
+                  <li><a class="h5 link-secondary fw-semibold text-decoration-none" style="color:#fff ;"
+                          href="work_with_us">徵人啟事</a></li>
+              </ul>
+          </div>
+          <div class="col-4 col-md">
+              <ul class="list-unstyled">
+                  <p class="h4 fw-bolder" style="color:#fff ;">社群</p>
+                  <li><a class="h5 link-secondary fw-semibold text-decoration-none" style="color:#fff ;"
+                          href="https://www.instagram.com/hsvi_111/">IG</a></li>
+                  <li><a class="h5 link-secondary fw-semibold text-decoration-none" style="color:#fff ;"
+                          href="https://twitter.com/HSVI45634750">Twitter</a></li>
+              </ul>
+          </div>
+          <div class="col-12 col-md">
+              <img src="static/img/HSVI_Logo.png" width="100" alt="" srcset="">
+          </div>
+      </div>
+
+    </footer>
+    <footer>
+        <script src="static/alert_close.js"></script>
+        {% block footer %}{% endblock %}
+    </footer>
+</body>
+</html>

@@ -1,0 +1,413 @@
+{% extends "base.html" %}
+{% block css %}
+    <link rel="stylesheet" href="static/upnav.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="static/about_us.css">
+    <link rel="stylesheet" href="static/scrollbar_style.css">
+{% endblock %}
+
+{% block main %}
+    <!--  -->
+    <div style="background-image: url(static/img/skynight.png);  background-repeat: repeat; ">
+    <!-- 團隊介紹 --> 
+    <div class="container text-center pt-5" style="color: #fff;" >
+        <div class="container col-xxl-8 px-4 py-5" >
+            <br>
+            <br>
+            <h5 class="display-4 fw-bold">團隊介紹</h5>
+            <div class="row align-items-center g-5 py-5 align-self-center">
+              <div class="col-12 col-sm-12 col-lg-6 align-self-center align-items-center ">
+                <img src="static/img/HSVI_Logo.png" class="mx-lg-auto img-fluid align-items-center" alt="Bootstrap Themes" loading="lazy">
+              </div>
+              <div class="col-lg-6 col-12 col-sm-12">
+                <h1 class="display-5 fw-bold lh-1 mb-3">關於HSVI</h1>
+                <p class="lead" >我們是一群對於Vtuber及其相關文化充滿嚮往，且具有行動力的台灣高中生，我們秉持著誠信、高效、有規範的工作原則想做出一位揚名國際的Vtuber~</p>
+                <a href="#ourteam" class="btn btn-primary">我們的團隊</a>
+              </div>
+            </div>
+        </div>
+    </div>
+    <br>
+
+
+    
+    <div class="container" id="ourteam" style="color: #fff;">
+    <!-- Vtuber --><div class="h-100 g-4 p-5  row container" id="ourVtuber">
+        <h5 class="h1 g-4">Vtuber</h5>
+        <div class="row align-items-center row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+            <div class="card shadow-lg">
+                <a href="#." class="text-muted text-decoration-none">
+                    <img class="card-img-top cardimg" style="object-position: 50% 0%;" src="static/img/HSVI_Vtuber/玥綾_影.png" alt="" srcset="">
+                    <div class="card-body">
+                        <h5 class="card-title">玥綾‧西米塔</h5>
+                        <p class="card-text">一個2400歲的耳廓狐仙，以歌聲和樂曲治癒人心，守護森林和人們。</p>
+                        <br>
+                        <br>
+                        <a href="https://twitter.com/YuelinSimita" class="me-2"><img src="static/img/twitter.png" title="Twitter:@YuelinSimita" height="30rem"></a>
+                    </div>
+                    </a>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card shadow-lg">
+                <a href="#." class="text-muted text-decoration-none">
+                    <img class="card-img-top cardimg" style="object-position: 50% 0%;"  src="static/img/HSVI_Vtuber/鬼差_影.png" alt="" srcset="">
+                    <div class="card-body">
+                        <h5 class="card-title">御行鬼差</h5>
+                        <p class="card-text">因忘卻生前記憶，與台灣幽靈鼓手交談後對人間與音樂產生興趣，透過Vtuber連結人間，尋回已遺忘的記憶。</p>
+                        <br>
+                        <br>
+                        
+                    </div>
+                </a>
+            </div>
+        </div>
+        
+        <div class="col">
+            <div class="card shadow-lg">
+                <a href="#." class="text-muted text-decoration-none">
+                    <img class="card-img-top cardimg" style="object-position: 50% 10%;"  src="static/img/HSVI_Vtuber/荻默_影.png" alt="" srcset="">
+                    <div class="card-body">
+                        <h5 class="card-title">荻默 • 諾可利絲</h5>
+                        <p class="card-text">剛成為人類的夜鷹對一切都有著非常多的好奇心，深深被世界吸引，於是開始了學習人類知識以及探索人類世界</p>
+                        <br>
+                        <a href="https://twitter.com/dimonuokelisi_" class="me-2"><img src="static/img/twitter.png" title="Twitter:@dimonuokelisi_" height="30rem"></a>
+                    </div>
+                    </a>
+            </div>
+        </div>
+    </div></div>
+
+
+    <!-- 繪圖組 --><div class="h-100 g-4 p-5  row  container" id="draw">
+        <h5 class="h1 g-4">繪圖組</h5>
+        <div class="row align-items-center row-cols-1 row-cols-md-3 g-4 ">
+           <div class="col">
+               <div class="card shadow-lg">
+                   <a href="#." class="text-muted text-decoration-none">
+                   <img class="card-img-top cardimg" style="object-position: 50% 10%;"  src="static/img/Naup.png" alt="" srcset="">
+                   <div class="card-body">
+                       <h5 class="card-title">Naup堇姬</h5>
+                       <p class="card-text">Naupすみれ姫(簡稱堇姬)，台灣邊緣繪師堇姬仙人姊姊</p>
+                       <br>
+                       <a href="https://twitter.com/naup96721?t=y6KLInn0AAmtN-t8X85erw&s=06" class="me-2"><img src="static/img/twitter.png" title="Twitter:@naup96721" height="30rem"></a>
+                       <a href="https://www.pixiv.net/users/69038591" class="me-2"><img src="static/img/pixiv.png" title="堇姬Naup-Pixiv" height="30rem"></a>
+                   </div>
+                   </a>
+               </div>
+           </div>
+            <div class="col">
+                <div class="card shadow-lg">
+                    <a href="#." class="text-muted text-decoration-none">
+                    <img class="card-img-top cardimg"   src="static/img/photo/番茄頭像.JPG" alt="" srcset="">
+                    <div class="card-body">
+                        <h5 class="card-title">番茄/柒枰</h5>
+                        <p class="card-text">HSVI繪圖組成員，目前是普通高中生</p>
+                        <br>
+                        <br>
+                        <a href="https://www.instagram.com/kuojac6161/" class="me-2"><img src="static/img/instagram.png" title="IG:kuojac6161" height="30rem"></a>
+                        <a href="https://twitter.com/FuqU72_qiping61" class="me-2"><img src="static/img/twitter.png" title="Twitter:@FuqU72_qiping61" height="30rem"></a>
+                        <a href="https://www.facebook.com/profile.php?id=100085755849518" class="me-2"><img src="static/img/facebook.png" title="FB:柒枰" height="30rem"></a>
+                    </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow-lg">
+                    <a href="#." class="text-muted text-decoration-none">
+                    <img class="card-img-top cardimg"   src="static/img/pigment.jpg" alt="" srcset="">
+                    <div class="card-body">
+                        <h5 class="card-title">顏料醬</h5>
+                        <p class="card-text">
+                           是個在地上的本土顏料<br>
+                           夢想是實現經濟自由後躺在地板上<br>
+                           目前已經實現一半了</p>
+                        <br>
+                    </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col">
+               <div class="card shadow-lg">
+                   <a href="#." class="text-muted text-decoration-none">
+                   <img class="card-img-top cardimg"   src="static/img/owl.jpg" alt="" srcset="">
+                   <div class="card-body">
+                       <h5 class="card-title">貓頭鷹</h5>
+                       <p class="card-text">其實我是打排球的，畫圖只是副業沒想到吧哈哈哈哈！</p>
+                       <br>
+                       <a href="https://twitter.com/owl02004" class="me-2"><img src="static/img/twitter.png" title="Twitter:貓頭鷹フクロウ@owl02004" height="30rem"></a>
+                       <a href="https://www.facebook.com/profile.php?id=100041448250586&mibextid=ZbWKwL" class="me-2"><img src="static/img/facebook.png" title="FB:不要放我鴿子" height="30rem"></a>
+                   </div>
+                   </a>
+               </div>
+           </div>
+           
+           <div class="col">
+                <div class="card shadow-lg">
+                    <a href="#." class="text-muted text-decoration-none">
+                        <img class="card-img-top cardimg"  src="static/img/photo/阿湯.png" alt="" srcset="">
+                        <div class="card-body">
+                            <h5 class="card-title">阿湯</h5>
+                            <p class="card-text">會撒</p>
+                            <br>
+                            <br>
+                            <a href="https://www.youtube.com/@A_Tang" class="me-2"><img src="static/img/youtube.png" title="Youtube:阿湯" height="30rem"></a>
+                            <a href="https://www.facebook.com/sinyu.tang.9" class="me-2"><img src="static/img/facebook.png" title="FB:湯家豪 （阿湯）" height="30rem"></a>
+                        </div>
+                        </a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow-lg">
+                    <a href="#." class="text-muted text-decoration-none">
+                        <img class="card-img-top cardimg"  src="static/img/photo/和月頭像.png" alt="" srcset="">
+                        <div class="card-body">
+                            <h5 class="card-title">和月</h5>
+                            <p class="card-text">爆肝爆肝爆肝啊啊啊啊啊啊</p>
+                            <br>
+                            <br>
+                            <a href="https://twitter.com/Caryolite_" class="me-2"><img src="static/img/twitter.png" title="Twitter:@Caryolite_ " height="30rem"></a>
+                            <a href="https://www.pixiv.net/users/69701323" class="me-2"><img src="static/img/pixiv.png" title="和月" height="30rem"></a>
+                        </div>
+                        </a>
+                </div>
+            </div>
+    </div>
+    </div>
+
+    <!-- PV --><div class="h-100 g-4 p-5  row container" id="PV">
+        <h5 class="h1 g-4">PV組</h5>
+        <div class="row align-items-center row-cols-1 row-cols-md-3 g-4 ">
+            <div class="col">
+                <div class="card shadow-lg">
+                    <a href="#." class="text-muted text-decoration-none">
+                        <img class="card-img-top cardimg"  src="static/img/lion.jpg" alt="" srcset="">
+                        <div class="card-body">
+                            <h5 class="card-title">之獅斯</h5>
+                            <p class="card-text">總有一天讓你們唸我名字唸到以為ㄓ後面是ㄕ，ㄔ後面是ㄙ<br>
+                                🦁｜低浮上｜PV｜是個DD<br>任何委託／工商與聯動邀約請來信
+                            </p>
+                            
+                            <!-- <ul class='bx-ul mb-0'><li><a href="mailto: liaon40088@gmail.com" class="text-decoration-none me-2" style="display: contents;">
+                                <p class="mb-0 fw-normal text-muted" >
+                                    <i class="bx bxl-gmail " style="color: black;"></i>liaon40088@gmail.com
+                                </p>
+                            </a></li></ul> -->
+                            <!-- <a href="mailto: liaon40088@gmail.com" class="text-decoration-none me-2" style="display: contents; color: black;">
+                                <p class="mb-0 fw-normal text-muted" ><i class="bx bxl-gmail bx-md" size="lg" style="color: black;"></i>liaon40088@gmail.com</p>
+                            </a> -->
+                            <!-- <a href="mailto: liaon40088@gmail.com" class="text-decoration-none me-2" style="display: contents; color: black;">
+                                <i class="bx bxl-gmail bx-md" style="color: black;"></i>
+                            </a> -->
+                            <br>
+                            <a href="mailto: liaon40088@gmail.com" style="height:30rem; color:black;" class="me-2 text-decoration-none"><img src="static/img/gmail.png" title="liaon40088@gmail.com" width="30rem" >&nbspliaon40088@gmail.com</a>
+                        </div>
+                        </a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow-lg">
+                    <a href="#." class="text-muted text-decoration-none">
+                        <img class="card-img-top cardimg"  src="static/img/photo/京未子.png" alt="" srcset="">
+                        <div class="card-body">
+                            <h5 class="card-title">京未子</h5>
+                            <p class="card-text">我是老鼠，下水道那種！有任何PV需求歡迎DM我的推特！</p>
+                            <br>
+                            <a href="mailto: kyomikotsubahara@gmail.com" style="height:30rem; color:black;" class="me-2 text-decoration-none"><img src="static/img/gmail.png" title="kyomikotsubahara@gmail.com" width="30rem" >
+                                &nbspkyomikotsubahara@gmail.com</a>
+                            <hr style="margin: 0.5rem;">
+                            <a href="https://www.instagram.com/kyomiko_dayo/" class="me-2"><img src="static/img/instagram.png" title="IG：kyomiko_dayo" height="30rem"></a>
+                            <a href="https://twitter.com/kyomiko_dayo" class="me-2"><img src="static/img/twitter.png" title="Twitter:@kyomiko_dayo" height="30rem"></a>
+                        </div>
+                        </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- 混音 --><div class="h-100 g-4 p-5  row container" id="mix">
+        <h5 class="h1 g-4">混音組</h5>
+        <div class="row align-items-center row-cols-1 row-cols-md-3 g-4 ">
+            <div class="col">
+                <div class="card shadow-lg">
+                    <a href="#." class="text-muted text-decoration-none">
+                        <img class="card-img-top cardimg"  src="static/img/photo/秋夜.png" alt="" srcset="">
+                        <div class="card-body">
+                            <h5 class="card-title">秋夜</h5>
+                            <p class="card-text">高中開始自學影片剪輯、平面設計、網頁架設，
+                                並開始經營個人YouTube頻道，在高三時開始接案轉變成自由工作者，
+                                爾後接到台灣最大遊戲YouTuber-阿神的案子，
+                                而第一支剪輯的影片至今已累積超過一百萬點閱。
+                                大三開始自學專研UIUX,也做了許多的Redesign作品。
+                                大四開始學習音樂,一年的時間也製作了超過十首的原創歌曲。
+                                
+                                </p>
+                                <br>
+                                <a href=" https://www.instagram.com/au.night/" class="me-2"><img src="static/img/instagram.png" title="IG：au.night" height="30rem"></a>
+                                <a href="https://twitter.com/AuNight_" class="me-2"><img src="static/img/twitter.png" title="Twitter:@AuNight_" height="30rem"></a>
+                                <a href="https://www.youtube.com/AuNight" class="me-2"><img src="static/img/youtube.png" title="Youtube:AuNight" height="30rem"></a>
+                                <a href="https://open.spotify.com/artist/3AhaLZxsspqiQaFjER1bX0?si=599c72ca9d2e452d" class="me-2"><img src="static/img/spotify.png" title="spotify:AuNight" height="30rem"></a>
+                            </div>
+                        </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!--行政組 --><div class="h-100 g-4 p-5  row container" id="clerical">
+    <h5 class="h1 g-4">行政組</h5>
+    <div class="row align-items-center row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+            <div class="card shadow-lg">
+                <a href="#." class="text-muted text-decoration-none">
+                    <img class="card-img-top cardimg"  src="static/img/ddd_head.png" alt="" srcset="">
+                    <div class="card-body">
+                        <h5 class="card-title">Ddd</h5>
+                        <p class="card-text">副社長，基本上負責架網站、會議記錄、文書工作跟打雜</p>
+                        <br>
+                        <a href="https://twitter.com/Ddd_dong_" class="me-2"><img src="static/img/twitter.png" title="Twitter:" height="30rem"></a>
+                    </div>
+                    </a>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card shadow-lg">
+                <a href="#." class="text-muted text-decoration-none">
+                <img class="card-img-top cardimg"  src="static/img/hensy_head.png" alt="" srcset="">
+                <div class="card-body">
+                    <h5 class="card-title">Hensy</h5>
+                    <p class="card-text">遊戲廢人</p>
+                    <br>
+                    <br>
+                    <br>
+                </div>
+                </a>
+            </div>
+        </div>
+        
+
+    </div>
+    </div>
+    <br>
+    <!-- 行銷組 --><div class="h-100 g-4 p-5  row  container" id="social">
+        <h5 class="h1 g-4">行銷組</h5>
+        <div class="row align-items-center row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card shadow-lg">
+                    <a href="#." class="text-muted text-decoration-none">
+                    <img class="card-img-top cardimg"  src="static/img/Yuyi.png" alt="" srcset="">
+                    <div class="card-body">
+                        <h5 class="card-title">羽夜</h5>
+                        <p class="card-text">一位超ㄎㄧㄤ的幽靈</p>
+                        <br>
+                        <br>
+                        <br>
+                        <a href="https://www.instagram.com/yu._.yi07/" class="me-2"><img src="static/img/instagram.png" title="IG：yu._.yi07" height="30rem"></a>
+                        <a href="https://twitter.com/Star_Yuyi" class="me-2"><img src="static/img/twitter.png" title="Twitter：星羽夜Yuyi" height="30rem"></a>
+                        <a href="https://www.facebook.com/profile.php?id=100074414545118" class="me-2"><img src="static/img/facebook.png" title="FB：Yu Yi" height="30rem"></a>
+                    </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow-lg" >
+                    <a href="#." class="text-muted text-decoration-none">
+                    <img class="card-img-top cardimg" src="static/img/weibo.png" alt="" srcset="">
+                    <div class="card-body">
+                        <h5 class="card-title">瑋博沙朗</h5>
+                        <p class="card-text">HSVI 的社長，是個什麼都會一點點的人類！喜歡看小說還有追台V的直播(⁠≧⁠▽⁠≦⁠)</p>
+                        <br>
+                        <br>
+                        <a href="https://twitter.com/6JhztE3HO0xh0C8?t=9kYlXHNcKsORoAA0Qeiu_A&s=09" class="me-2"><img src="static/img/twitter.png" title="Twitter:瑋博沙朗" height="30rem"></a>
+                        <a href="https://youtube.com/channel/UCPmBskxG9VcxsOHMmC2WN6g" class="me-2"><img src="static/img/youtube.png" title="Youtube:小沙朗的調音間" height="30rem"></a>
+                    </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow-lg" >
+                    <a href="#." class="text-muted text-decoration-none">
+                    <img class="card-img-top cardimg" src="static/img/photo/youe.webp" alt="" srcset="">
+                    <div class="card-body">
+                        <h5 class="card-title">鬼鬼</h5>
+                        <p class="card-text">社恐_INTJ<br>工作之餘，當個蛇奴（是鬼不是公雞）</p>
+                        <br>
+                        <br>
+                        <br>
+                    </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow-lg" >
+                    <a href="#." class="text-muted text-decoration-none">
+                    <img class="card-img-top cardimg" src="static/img/photo/ghost.webp" alt="" srcset="">
+                    <div class="card-body">
+                        <h5 class="card-title">yo約</h5>
+                        <p class="card-text">米哈遊的狗<br>行銷組的重度原神跟崩鐵玩家，喜歡打籃球的遊戲廢人</p>
+                        <br>
+                        <br>
+                        <a href="https://www.instagram.com/jacobez_www/" class="me-2"><img src="static/img/instagram.png" title="IG：jacobez_www" height="30rem"></a>
+                    </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <!-- 建模組 --><div class="h-100 g-4 p-5  row  container" id="live2d">
+        <h5 class="h1 g-4">建模組</h5>
+        <div class="row align-items-center row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card shadow-lg">
+                    <a href="#." class="text-muted text-decoration-none">
+                    <img class="card-img-top cardimg"  src="static/img/neliko.png" alt="" srcset="">
+                    <div class="card-body">
+                        <h5 class="card-title">neliko</h5>
+                        <p class="card-text"> HSVI 建模糊組成員喜歡看nene直播還有追rushia烤肉 </p>
+                        <br>
+                    </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow-lg">
+                    <a href="#." class="text-muted text-decoration-none">
+                    <img class="card-img-top cardimg" style="object-position: 50% 80%;"  src="static/img/ryder.png" alt="" srcset="">
+                    <div class="card-body">
+                        <h5 class="card-title">懶得/喜德</h5>
+                        <p class="card-text">HSVI 建模(糊)組成員,是個臭DD!喜歡看GURA還有追GURA直播</p>
+                        <br>
+                    </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow-lg">
+                    <a href="#." class="text-muted text-decoration-none">
+                    <img class="card-img-top cardimg"   src="static/img/leo.png" alt="" srcset="">
+                    <div class="card-body">
+                        <h5 class="card-title">利行</h5>
+                        <p class="card-text">HSVI 建模糊組成員喜歡看rushia直播(不能看了)還有追rushia烤肉</p>
+                        <br>
+                    </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    </div>
+    </div>
+    <br>
+</div>
+{% endblock %}
+
+{% block footer %}
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+{% endblock %}
